@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 import { ctrlWrapper } from "../decorators/index.js";
-import { HttpError } from "../helpers/index.js";
+import HttpError from "../helpers/HttpError.js";
 import { User } from "../models/index.js";
 import "dotenv/config";
 

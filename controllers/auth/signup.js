@@ -1,7 +1,7 @@
 import bcrypt from "bcrypt";
 import { User } from "../../models/index.js";
 import gravatar from "gravatar";
-import { HttpError } from "../../helpers/index.js";
+import HttpError from "../../helpers/HttpError.js";
 import { ctrlWrapper } from "../../decorators/index.js";
 
 const signup = async (req, res) => {

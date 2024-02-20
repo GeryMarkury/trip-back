@@ -1,6 +1,6 @@
 import { User } from "../../models/index.js";
 import bcrypt from "bcrypt";
-import { HttpError } from "../../helpers/index.js";
+import HttpError from "../../helpers/HttpError.js";
 import { ctrlWrapper } from "../../decorators/index.js";
 import jwt from "jsonwebtoken";
 import "dotenv/config";

@@ -1,5 +1,5 @@
 import { Trip } from "../../models/index.js";
-import { HttpError } from "../../helpers/index.js";
+import HttpError from "../../helpers/HttpError.js";
 import { ctrlWrapper } from "../../decorators/index.js";
 
 const getById = async (req, res) => {
