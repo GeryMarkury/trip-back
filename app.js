@@ -3,7 +3,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import helmet from "helmet";
 import logger from "morgan";
-// import { tripsRouter, authRouter } from "./routes/index.js";
+import { tripsRouter, authRouter } from "./routes/index.js";
 
 const app = express();
 
@@ -18,8 +18,8 @@ app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 
-// app.use("/users", authRouter);
-// app.use("/trips", tripsRouter);
+app.use("/users", authRouter);
+app.use("/trips", tripsRouter);
 
 app.use((req, res) => {
 	res.status(404).json({ message: "Not found" });
