@@ -1,43 +1,43 @@
 export const cities = [
 	{
 		city: "Bratislava",
-		img: "public/assets/BA.jpg",
+		img: "https://res.cloudinary.com/dhyxmtrgc/image/upload/v1708445306/test/yho59htwbjtjaznqs0kb.jpg",
 	},
 	{
 		city: "Berlin",
-		img: "public/assets/BA.jpg",
+		img: "https://res.cloudinary.com/dhyxmtrgc/image/upload/v1708445300/test/mtsfhq9uzvmwpzwy11ru.jpg",
 	},
 	{
 		city: "Oslo",
-		img: "public/assets/OS.jpg",
+		img: "https://res.cloudinary.com/dhyxmtrgc/image/upload/v1708445398/test/qusjkw2ksjzgsa8cqdxk.jpg",
 	},
 	{
 		city: "London",
-		img: "public/assets/LN.jpg",
+		img: "https://res.cloudinary.com/dhyxmtrgc/image/upload/v1708445427/test/plaxopnbcsh1s59vmdvq.jpg",
 	},
 	{
 		city: "Stockholm",
-		img: "public/assets/SM.jpg",
+		img: "https://res.cloudinary.com/dhyxmtrgc/image/upload/v1708445335/test/dn8jj64esbc5rzrdtavb.jpg",
 	},
 	{
 		city: "Prague",
-		img: "public/assets/PG.jpg",
+		img: "https://res.cloudinary.com/dhyxmtrgc/image/upload/v1708445440/test/jq3nmrihju2iacw2xit0.jpg",
 	},
 	{
 		city: "Kyiv",
-		img: "public/assets/KV.jpg",
+		img: "https://res.cloudinary.com/dhyxmtrgc/image/upload/v1708445119/test/c8ilwiygohhyr0adsxxv.jpg",
 	},
 	{
 		city: "Warsaw",
-		img: "public/assets/WS.jpg",
+		img: "https://res.cloudinary.com/dhyxmtrgc/image/upload/v1708445305/test/btdrk6fey28vai2t0lkq.jpg",
 	},
 	{
 		city: "Barcelona",
-		img: "public/assets/BC.jpg",
+		img: "https://res.cloudinary.com/dhyxmtrgc/image/upload/v1708445236/test/kdthtn9edtgsfnbfaz2l.jpg",
 	},
 	{
 		city: "Tokyo",
-		img: "public/assets/TO.jpg",
+		img: "https://res.cloudinary.com/dhyxmtrgc/image/upload/v1708445292/test/pthkankehjsbazuniclb.jpg",
 	},
 ];
 
