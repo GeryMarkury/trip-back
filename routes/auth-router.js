@@ -1,8 +1,8 @@
+import { signup, signin, signout, getCurrent } from "../controllers/auth/index.js";
 import express from "express";
-import { usersSchemas } from "../../schemas/index.js";
-import { validateBody } from "../../decorators/index.js";
-import { signup, signin, signout, getCurrent } from "../../controllers/auth/index.js";
-import { authenticate } from "../../middlewars/index.js";
+import { usersSchemas } from "../schemas/index.js";
+import { authenticate } from "../middlewars/index.js";
+import { validateBody } from "../decorators/index.js";
 
 const authRouter = express.Router();
 
