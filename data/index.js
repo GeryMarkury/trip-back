@@ -40,3 +40,6 @@ export const cities = [
 		img: "public/assets/TO.jpg",
 	},
 ];
+
+export const citiesNames = cities.map(city => city.city);
+export const citiesImgs = cities.map(city => city.img);
