@@ -3,6 +3,10 @@ import { User } from "../../models/index.js";
 import gravatar from "gravatar";
 import HttpError from "../../helpers/HttpError.js";
 import { ctrlWrapper } from "../../decorators/index.js";
+import jwt from "jsonwebtoken";
+import "dotenv/config";
+
+const { JWT_SECRET } = process.env;
 
 const signup = async (req, res) => {
 	const { email, password } = req.body;
@@ -13,9 +17,11 @@ const signup = async (req, res) => {
 
 	const hashPassword = await bcrypt.hash(password, 10);
 	const avatarURL = gravatar.url(email, {}, true);
-	const newUser = await User.create({ ...req.body, password: hashPassword, avatarURL });
+	const token = jwt.sign(payload, JWT_SECRET, { expiresIn: "23h" });
+	const newUser = await User.create({ ...req.body, password: hashPassword, avatarURL, token });
 
 	res.status(201).json({
+		token,
 		user: {
 			email: newUser.email,
 			avatarURL: newUser.avatarURL,
